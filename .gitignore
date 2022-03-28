@@ -1,0 +1,7 @@
+*.pyc
+*.glb
+
+LocalTests*
+
+DockerRegistryCredentials.json
+config-connections.json
