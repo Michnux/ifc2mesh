@@ -5,3 +5,4 @@ LocalTests*
 
 DockerRegistryCredentials.json
 config-connections.json
+dockerhub-credentials.json

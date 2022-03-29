@@ -1,1 +1,1 @@
-{"outputs": {"output_mesh": {"type": "mesh", "format": "glb", "name": "output_mesh", "components": [{"name": "mesh", "path": "/home/work_dir/output.glb"}]}}, "version": "v1.0"}
+{"outputs": {"output_mesh": {"type": "mesh", "format": "glb", "name": "output_mesh", "components": [{"name": "mesh", "path": "/home/work_dir/output.glb"}]}}, "version": "0.1"}

@@ -7,7 +7,7 @@ import sys
 import time
 
 from ifc2mesh import ifc2mesh
-# from upload_dataset import upload_dataset
+from upload_dataset import upload_dataset
 
 
 LOG_FORMAT = '[%(levelname)s] %(message)s'
@@ -84,8 +84,8 @@ def main():
 	with open(WORKING_DIR / 'outputs.json', 'w+') as f:
 		json.dump(output, f)
 
-	# script_dir = str(SCRIPT_DIR)+'/'
-	# upload_dataset(str(outpath), project_id, mission_id, script_dir, hsrs, vsrs)
+	script_dir = str(SCRIPT_DIR)+'/'
+	upload_dataset(str(outpath), project_id, mission_id, script_dir)
 
 	logging.debug('End.')
 

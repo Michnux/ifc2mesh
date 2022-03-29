@@ -14,11 +14,13 @@ sdk = alteia.SDK(config_path='./config-connections.json')
 
 # print([x.name for x in datasets])
 
-cred = sdk.credentials.search()
-creds = [x.name for x in cred]
-print(creds)
-# creds = [x for x in cred if x.name=='Michael de Lagarde']
+# cred = sdk.credentials.search()
+# creds = [x.name for x in cred]
+# print(creds)
+# creds = [x for x in cred if x.name=='dockerhub']
+# print(len(creds))
 # print(creds[0].__dict__)
 
 # help(sdk.credentials.delete)
-# sdk.credentials.delete(credential=creds[0].id, company='5c5c58a532bbdb4b66905abb')
+# sdk.credentials.delete(credential=creds[0].id, company='5c1a2567b3c575583e8a650d')
+

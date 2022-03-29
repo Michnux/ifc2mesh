@@ -68,24 +68,24 @@ sdk.analytics.create(name="alteiademo/ifc2mesh",
 
 	],
 	deliverables=[
-	{
-		"name": "output_mesh",
-		"display_name": "output_mesh",
-		"description": "output_mesh",
-		"scheme": {
-			"type": "string", "pattern": "^[0-9a-f]{24}$"
-		},
-		"source": {
-			"service": "data-manager",
-			"resource": "dataset",
-			"scheme": {
-				"type": "object",
-				"properties": {"type": {"const": "mesh"}},
-				"required": ["type"]
-			},
-		},
-		"required": False
-	}
+	# {
+	# 	"name": "output_mesh",
+	# 	"display_name": "output_mesh",
+	# 	"description": "output_mesh",
+	# 	"scheme": {
+	# 		"type": "string", "pattern": "^[0-9a-f]{24}$"
+	# 	},
+	# 	"source": {
+	# 		"service": "data-manager",
+	# 		"resource": "dataset",
+	# 		"scheme": {
+	# 			"type": "object",
+	# 			"properties": {"type": {"const": "mesh"}},
+	# 			"required": ["type"]
+	# 		},
+	# 	},
+	# 	"required": False
+	# }
 	],
 	tags=["croquette"],
 	groups=["UTILS"])

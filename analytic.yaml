@@ -1,0 +1,46 @@
+spec-version: v1.0
+name: alteiademo/ifc2mesh
+version: 1.0.0
+display-name: ifc2mesh
+description: ifc2mesh
+docker-image: registry-1.docker.io/michaeldelagarde/ifc2mesh:latest
+instance-type: small
+volume-size: 20
+groups: [UTILS]
+
+inputs:
+  - name: input_ifc
+    display-name: IFC File
+    description: Generates a Mesh from an IFC file
+    kind: dataset
+    schema:
+      type: file
+    required: true
+parameters:
+  - name: x_offset
+    display-name: X offset
+    description: X offset to apply to ifc coordinates
+    schema:
+      type: string
+    required: true
+  - name: y_offset
+    display-name: Y offset
+    description: Y offset to apply to ifc coordinates
+    schema:
+      type: string
+    required: true
+  - name: z_offset
+    display-name: Z offset
+    description: Z offset to apply to ifc coordinates
+    schema:
+      type: string
+    required: true
+
+deliverables:
+  - name: output_mesh
+    display-name: output_mesh
+    description: output_mesh
+    kind: dataset
+    schema:
+      type: mesh
+    required: true
