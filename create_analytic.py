@@ -5,17 +5,17 @@ import alteia
 sdk = alteia.SDK(config_path='./config-connections.json')
 
 
-analytic = sdk.analytics.search(name="alteiademo/ifc2mesh")
+analytic = sdk.analytics.search(name="eiffagedso/ifc2mesh")
 if len(analytic)>0:
 	analytic=analytic[0]
 	sdk.analytics.delete(analytic=analytic.id)
 
-sdk.analytics.create(name="alteiademo/ifc2mesh",
+sdk.analytics.create(name="eiffagedso/ifc2mesh",
 	version="1.0.0",
 	display_name="ifc2mesh",
 	description="Generates a Mesh from an IFC file - - - ",
 	docker_image="registry-1.docker.io/michaeldelagarde/ifc2mesh:latest",
-	company="5c1a2567b3c575583e8a650d",
+	company="5fff27df5a46310007b58024",
 	instance_type='small',
 	volume_size=20,
 	inputs=[{
@@ -87,5 +87,5 @@ sdk.analytics.create(name="alteiademo/ifc2mesh",
 	# 	"required": False
 	# }
 	],
-	tags=["croquette"],
-	groups=["UTILS"])
+	# tags=["croquette"],
+	groups=["IFC"])
